@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ippai</title>
+  <noscript><meta http-equiv="refresh" content="0; url=en/"></noscript>
+  <script>
+    (function () {
+      var l = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+      l = l.toLowerCase();
+      var dir = "en";
+      if (l.indexOf("ja") === 0) dir = "ja";
+      else if (l.indexOf("ko") === 0) dir = "ko";
+      else if (l.indexOf("zh") === 0) dir = (l.indexOf("hant") >= 0 || l.indexOf("-tw") >= 0 || l.indexOf("-hk") >= 0 || l.indexOf("-mo") >= 0) ? "zh-Hant" : "zh-Hans";
+      location.replace(dir + "/");
+    })();
+  </script>
+</head>
+<body>
+  <a href="en/">Redirecting...</a>
+</body>
+</html>
